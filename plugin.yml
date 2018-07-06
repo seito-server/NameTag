@@ -1,0 +1,17 @@
+name: NameTag
+main: takesi\nametag
+version: 2.2
+api: [3.0.0]
+load: POSTWORLD
+author: takesi
+commands:
+ nametag:
+  description: "NameTagコマンド"
+  usage: /nametag <subcommand>
+ permissions:
+  nametag:
+   default: true
+   children:
+      nametag.command:
+        description: "Allows you to use all PurePerms commands."
+        default: true
